@@ -9,14 +9,14 @@
     <body>
     
         <ul class="topnav" id="myTopnav">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Login">Login</a></li>
-          <li><a href="#Config">Config</a></li>
+          <li><a href="projPage.html">Home</a></li>
+          <li><a href="scoreboard.html">Login</a></li>
+          <li><a href="http://www.google.com">Config</a></li>
           <li class="icon">
             <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
           </li>
         </ul>
-        <div ng-app="myApp" ng-controller="myCtrl" id="app">
+        <div ng-app="myApp" ng-controller="myCtrl" id="app"></div>
             <center>
         <h1>Judge Form</h1>
             
@@ -38,7 +38,7 @@
             <p id="criteriaDetails">
             <script>getCriteriaDetails()</script></p>
             <br>
-            <form id="judgeForm" action="">
+            <form id="judgeForm" action="scoreboard.html" method="get">
                 Rating: 
                 <select name="rating:">
                 <option value="0">0</option>
@@ -52,7 +52,7 @@
                 Feedback:
                 <textarea id="feedback" rows="5" cols="30"></textarea>
                 <br><br>
-                <input type="submit" value="Save and Submit">
+                <input type="submit" value="Save and Submit" onclick="redirect();">
             </form>
     </body>
 </html>

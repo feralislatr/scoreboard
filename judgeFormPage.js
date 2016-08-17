@@ -47,26 +47,7 @@ function setFeedback() {
     "use strict";
 }
 
-function getTeamName() {
+function redirectToScoreboard() {
     "use strict";
-}
-
-function getProj() {
-    "use strict";
-}
-
-function getCurrRating() {
-    "use strict";
-}
-
-function setCurrRating() {
-    "use strict";
-}
-
-function getFeedback() {
-    "use strict";
-}
-
-function setFeedback() {
-    "use strict";
+    window.location.href = "scoreboard.html";
 }
