@@ -1,14 +1,14 @@
 
 function getCriteriaName() {
     "use strict";
-    var name=" criteria name";
+    var name = " criteria name";
     document.getElementById('criteriaName').innerHTML = name;
     
 }
 
 function getCriteriaDetails() {
     "use strict";
-    var details = "criteria summary"
+    var details = "criteria summary";
     
     document.getElementById('criteriaDetails').innerHTML = details;
 }
