@@ -2,12 +2,20 @@
 <html>
     <head>
         <title>Judge Form</title>
+        <link rel="stylesheet" href="projPage.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
         <script src="judgeFormPage.js"></script>
     </head>
     <body>
     
-        
+        <ul class="topnav" id="myTopnav">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Login">Login</a></li>
+          <li><a href="#Config">Config</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
         <div ng-app="myApp" ng-controller="myCtrl" id="app">
             <center>
         <h1>Judge Form</h1>
