@@ -1,13 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        <title>Judge Form</title>
+        <title>UX Form</title>
         <link rel="stylesheet" href="projPage.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <script src="judgeFormPage.js"></script>
     </head>
     <body>
-    
         <ul class="topnav" id="myTopnav">
           <li><a href="projPage.html">Home</a></li>
           <li><a href="scoreboard.html">Login</a></li>
@@ -33,10 +31,10 @@
             </center>    
         <br>
             <p id="criteriaName">
-            <script>getCriteriaName()</script></p>
+            UX</p>
             
             <p id="criteriaDetails">
-            <script>getCriteriaDetails()</script></p>
+            ux details</p>
             <br>
             <form id="judgeForm" action="scoreboard.html" method="get">
                 Rating: 
@@ -50,7 +48,7 @@
                 </select>
                 <br><br>
                 Feedback:
-                <textarea id="feedback" rows="5" cols="30"></textarea>
+                <textarea id="uxFeedback" rows="5" cols="30"></textarea>
                 <br><br>
                 <input type="submit" value="Save and Submit" onclick="redirect();">
             </form>
