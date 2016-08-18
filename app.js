@@ -4,18 +4,18 @@ var path = require('path');
 var mongoose = require('mongoose');
 
 // Connect to db
-// mongoose.connect('mongodb://localhost/XXX');
-// var db = mongoose.connection;
-// db.on('error', function() { console.log('connection error'); });
-// db.once('open', function (callback) {
-//     console.log("database connected");
-// });
+mongoose.connect('mongodb://localhost/mydb');
+var db = mongoose.connection;
+db.on('error', function() { console.log('connection error'); });
+db.once('open', function (callback) {
+    console.log("database connected");
+});
 
-// Import route handlers
-// var zipcodes = require('./routes/zip');
+// Import score route handlers
+ var scoreRoute = require('./routes/scoreRoute');
 
-// Import Zip model
-// var ZipCode = require('./models/zipcodeModel');
+// Import score model
+ var ScoreModel = require('./models/scoreModel');
 
 var app = express();
 
@@ -25,12 +25,8 @@ app.set('view engine', 'ejs'); // use either jade or ejs
 // instruct express to server up static assets
 app.use(express.static('public'));
 
-// app.use('/zip', zipcodes);
+app.use('/', scoreRoute);
 
-// routes
-app.get('/', function(req, res) {
-  res.render('projPage');
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

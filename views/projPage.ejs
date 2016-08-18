@@ -4,11 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Scoreboard Hackathon</title>
-        <link rel="stylesheet" href="projPage.css">
+        <link rel="stylesheet" href="css/projPage.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).on("click", "#bt1", function(){
+              console.log("getting data");
+              $.get("/Judge1", function(data){
+                console.log(data);
+              });
+            });
+        </script>
+
     </head>
     <body>
          <nav class="navbar navbar-static-top navbar-light bg-faded">
@@ -21,7 +31,7 @@
                       <a class="nav-link" href="scoreboard.html">Login</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Config</a>
+                     <a class="nav-link" href="#" id="bt1">Config</a>
                   </li>
              </ul>
         </nav>
@@ -37,7 +47,7 @@
             <div class="col-md-4">
                   <h2>Scoreboard</h2>
                   <p>Donec id elit non mi porta gravida at eget metus. </p>
-                  <p><a class="btn btn-primary" href="scoreboard.html" role="button">View</a></p>
+                  <p><a class="btn btn-primary" href="/scoreboard" role="button">View</a></p>
             </div>
             <div class="col-md-4">
                   <h2>Feedback Dashboard</h2>
