@@ -1,5 +1,5 @@
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -82,4 +82,4 @@ ul.topnav li.icon {display: none;}
     100% {
         filter: grayscale(0%);
     }
-}
+} 
