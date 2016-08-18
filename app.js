@@ -12,7 +12,7 @@ var mongoose = require('mongoose');
 // });
 
 // Import route handlers
-// var zipcodes = require('./routes/zip');
+ var routes = require('./routes/routes');
 
 // Import Zip model
 // var ZipCode = require('./models/zipcodeModel');
@@ -25,12 +25,7 @@ app.set('view engine', 'ejs'); // use either jade or ejs
 // instruct express to server up static assets
 app.use(express.static('public'));
 
-// app.use('/zip', zipcodes);
-
-// routes
-app.get('/', function(req, res) {
-  res.render('projPage');
-});
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
