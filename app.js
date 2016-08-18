@@ -14,6 +14,7 @@ db.once('open', function (callback) {
 // Import score route handlers
  var scoreRoute = require('./routes/scoreRoute');
 
+
 // Import score model
  var ScoreModel = require('./models/scoreModel');
 
@@ -24,6 +25,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs'); // use either jade or ejs
 // instruct express to server up static assets
 app.use(express.static('public'));
+
 
 app.use('/', scoreRoute);
 
