@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
+router.get('/agile', function(req, res) {
+  res.render('Agile');
+});
+
 router.get('/businessval', function(req, res) {
   res.render('businessValue');
 });
@@ -27,6 +31,14 @@ router.get('/', function(req, res) {
 
 router.get('/scoreboard', function(req, res) {
   res.render('scoreboard');
+});
+
+router.get('/scoreboard2', function(req, res) {
+  res.render('scoreboard2');
+});
+
+router.get('/scoreboard3', function(req, res) {
+  res.render('scoreboard3');
 });
 
 router.get('/ux', function(req, res) {
