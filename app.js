@@ -29,7 +29,7 @@ app.use(express.static('public'));
 
 // routes
 app.get('/', function(req, res) {
-  res.render('map_view');
+  res.render('projPage');
 });
 
 // catch 404 and forward to error handler
