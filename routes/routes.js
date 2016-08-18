@@ -21,7 +21,7 @@ router.get('/login', function(req, res) {
   res.render('loginPage');
 });
 
-router.get('/home', function(req, res) {
+router.get('/', function(req, res) {
   res.render('projPage');
 });
 
