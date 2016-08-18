@@ -69,6 +69,8 @@ header{
 	margin: 0 auto;
 }
 
+/**Scoreboard ****************/
+
 .round{
     width:100%;  /**breaks**/
     height:100%;
@@ -101,13 +103,53 @@ header{
 
 }
 
+/**Scorebox**************/
 
 table,tr,td{
-	border:solid 1px black;
+	border:transparent;
 	
 }
 
 td{
-	height:100px;
-	width:100px;
+	height:150px;
+	width:150px;
+	
+}
+
+td a, td a:visited{
+	text-decoration: none;
+	color:white;
+	padding:50px;
+}
+
+td a:hover{
+	text-decoration: none;
+	color:#333;
+}
+
+
+
+.ui{
+	background-color: turquoise;
+}
+
+.function{
+	background-color: aquamarine;	
+}
+
+.agile{
+	background-color: coral;
+}
+
+.devops{
+	background-color:salmon;
+}
+
+.testing{
+	background-color:violet;
+}
+
+.value{
+	background-color:lavender;
+	
 }
