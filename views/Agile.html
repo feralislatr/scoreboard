@@ -1,10 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <title>Continuous Testing Form</title>
+        <title>Agile Methodology Form</title>
         <link rel="stylesheet" href="projPage.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Scoreboard Hackathon</title>
         <link rel="stylesheet" href="projPage.css">
@@ -14,7 +13,7 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-static-top navbar-light bg-faded">
+         <nav class="navbar navbar-static-top navbar-light bg-faded">
               <a href="projPage.html" class="navbar-brand">BAH Hackathon</a>
               <ul class="nav navbar-nav">
                   <li class="nav-item">
@@ -25,11 +24,10 @@
         <div ng-app="myApp" ng-controller="myCtrl" id="app"></div>
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Testing Criteria</h1>
-                <p>The following questions should be asked about each of the ensuing test types. Is the test implemented? How is it implemented? Is it an effective implementation?</p>
+                <h1 class="display-3">Agile Methodology</h1>
             </div>
         </div>
-            <center>
+            
             <p id="hackathonName">
             <script>getHackathonName()</script>
             </p>
@@ -40,32 +38,25 @@
             
             <p id="projectName">
             <script>getProjectName()</script></p>
-            </center>  
-        <br><br>
-         <div class="col-md-12">
+            </center>    
+        <br>
+            <div class="col-md-12">
              <p style="text-center;">
-            <p id="criteriaDetails">
-
-            The following questions should be asked about each of the ensuing test types. Is the test implemented? How is it implemented? Is it an effective implementation? </p>
-            <br>
-
-            <b>Unit testing </b>
+                <p id="criteriaDetails">
+                
+                <b>Agile implementation </b>: Are teams using an agile methodology to guide their SDLC?
                 <br>
-            <b>Performance testing</b>
+            <b>Scrum</b>: do teams integrate regular sprints (could be daily or every 2 hours) and daily deliverables? 
                 <br>
-            <b>Static code analysis</b>
+            <b>Estimation </b>: do teams predefine the features/story-points that should be delivered upon at the end of the day? 
                 <br>
-            <b>Integration testing</b>
+            <b>Tracking</b>: do teams use tracking software to determine if they are on track? 
                 <br>
-            <b>Continous testing</b>: did teams expand upon the CI pipeline to include continuous testing? Did they add tools like TestNG and Selenium to Jenkins? When does this testing occur? After each commit? Or manually?
-           
+            <b>Design Phase </b>: do teams spend a core amount of time designing their project before the implementation phase? Do teams iterate through daily design phases? Or is design over-looked?  
                 </p>
             <br>
 
-
-
-
-            </p>
+            <br>
             <form id="judgeForm" action="scoreboard.html" method="get">
                 Rating: 
                 <select name="rating:">
@@ -78,10 +69,10 @@
                 </select>
                 <br><br>
                 Feedback:
-                <textarea id="continuousTestingFeedback" rows="5" cols="30"></textarea>
+                <textarea id="FunctionalityFeedback" rows="5" cols="30"></textarea>
                 <br><br>
                 <input type="submit" value="Save and Submit" onclick="redirect();">
-                </form>
+            </form>
         </div>
     </body>
 </html>
