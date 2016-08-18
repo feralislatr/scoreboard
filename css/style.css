@@ -119,12 +119,15 @@ td{
 td a, td a:visited{
 	text-decoration: none;
 	color:white;
-	padding:50px;
+	padding:30px;
+	font-size:150%;
 }
 
 td a:hover{
 	text-decoration: none;
 	color:#333;
+	filter:rgba(255,255,255,.6);
+	transition:.5s ease;
 }
 
 
