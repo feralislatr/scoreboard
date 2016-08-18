@@ -1,10 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <title>Continuous Testing Form</title>
+        <title>UX Form</title>
         <link rel="stylesheet" href="projPage.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Scoreboard Hackathon</title>
         <link rel="stylesheet" href="projPage.css">
@@ -14,22 +13,23 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-static-top navbar-light bg-faded">
-              <a href="projPage.html" class="navbar-brand">BAH Hackathon</a>
+         <nav class="navbar navbar-static-top navbar-light bg-faded">
+              <a href="/projPage" class="navbar-brand">BAH Hackathon</a>
               <ul class="nav navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="loginPage.html">Login</a>
+                      <a class="nav-link" href="/login">Login</a>
                   </li>
              </ul>
         </nav>
         <div ng-app="myApp" ng-controller="myCtrl" id="app"></div>
-        <div class="jumbotron">
+         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Testing Criteria</h1>
-                <p>The following questions should be asked about each of the ensuing test types. Is the test implemented? How is it implemented? Is it an effective implementation?</p>
+                <h1 class="display-3">UI/UX Criteria</h1>
+                <p>All submissions must meet the following criteria to ensure that they adhere to a common, usable standard.</p>
             </div>
         </div>
             <center>
+            
             <p id="hackathonName">
             <script>getHackathonName()</script>
             </p>
@@ -40,33 +40,35 @@
             
             <p id="projectName">
             <script>getProjectName()</script></p>
-            </center>  
+            </center>    
         <br><br>
-         <div class="col-md-12">
+        <div class="col-md-12">
              <p style="text-center;">
             <p id="criteriaDetails">
+            
+            <b>Actionable </b>: the tasks and goals that the service is designed for are clear and easy to understand for users – e.g. do things look like their function? Is it obvious what to press and what not to?
+                <br>
+            <b>Consisent </b>: consistency of IA, visual, and interaction design throughout the service
+                <br>
+            <b>Content </b>: appropriate content for the service
+                <br>
+            <b>Responsive </b>: works well across platforms of Mobile and Laptop
+                <br>
+            <b>Information Architecture (IA) </b>: good navigation; clear and consistently presented labels; precise and well defined iconography; orientation within the service is clear; links are obvious.
+                <br>
+            <b>Inferface </b>: the interface doesn’t get in the way of the content   
+                <br>
+            <b>Purpose </b>: clear what the service is supposed to let you achieve 
+                <br>
+            <b>Visual Design </b>: aesthetically pleasing visual design
 
-            The following questions should be asked about each of the ensuing test types. Is the test implemented? How is it implemented? Is it an effective implementation? </p>
-            <br>
-
-            <b>Unit testing </b>
-                <br>
-            <b>Performance testing</b>
-                <br>
-            <b>Static code analysis</b>
-                <br>
-            <b>Integration testing</b>
-                <br>
-            <b>Continous testing</b>: did teams expand upon the CI pipeline to include continuous testing? Did they add tools like TestNG and Selenium to Jenkins? When does this testing occur? After each commit? Or manually?
-           
                 </p>
             <br>
 
 
 
-
             </p>
-            <form id="judgeForm" action="scoreboard.html" method="get">
+            <form id="judgeForm" action="/scoreboard" method="get">
                 Rating: 
                 <select name="rating:">
                 <option value="0">0</option>
@@ -78,10 +80,10 @@
                 </select>
                 <br><br>
                 Feedback:
-                <textarea id="continuousTestingFeedback" rows="5" cols="30"></textarea>
+                <textarea id="uxFeedback" rows="5" cols="30"></textarea>
                 <br><br>
                 <input type="submit" value="Save and Submit" onclick="redirect();">
-                </form>
+            </form>
         </div>
     </body>
 </html>

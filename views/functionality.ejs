@@ -1,10 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <title>Business Value Form</title>
+        <title>Functionality Form</title>
         <link rel="stylesheet" href="projPage.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Scoreboard Hackathon</title>
         <link rel="stylesheet" href="projPage.css">
@@ -15,56 +14,20 @@
     </head>
     <body>
          <nav class="navbar navbar-static-top navbar-light bg-faded">
-              <a href="projPage.html" class="navbar-brand">BAH Hackathon</a>
+              <a href="/projPage" class="navbar-brand">BAH Hackathon</a>
               <ul class="nav navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link" href="loginPage.html">Login</a>
+                      <a class="nav-link" href="/login">Login</a>
                   </li>
              </ul>
         </nav>
         <div ng-app="myApp" ng-controller="myCtrl" id="app"></div>
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Business Value</h1>
-                <p>Utility: would this software be usable out of the box? Applicability: does this software provide immediate utility to Booz Allen?</p>
+                <h1 class="display-3">Functionality Criteria</h1>
             </div>
         </div>
-
-
-          <div class="col-md-12">
-                 <p style="text-align:center;">   
-
-
-                    <p id="criteriaDetails">
             
-            <b>Utility </b>: would this software be usable out of the box?
-                <br>
-            <b>Applicability </b>: does this software provide immediate utility to Booz Allen? 
-             </p>
-            <br>
-
-            </p>
-
-
-                  <form id="judgeForm" action="scoreboard.html" method="get">
-                Rating: 
-                <select name="rating:">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                 <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-        
-                <br><br>
-                Feedback:
-                <textarea id="businessValueFeedback" rows="5" cols="30"></textarea>
-                <br><br>
-                
-                <input type="submit" value="Save and Submit" onclick="redirect();">
-            </form>
-        <center>
             <p id="hackathonName">
             <script>getHackathonName()</script>
             </p>
@@ -74,9 +37,37 @@
             </p>
             
             <p id="projectName">
-            <script>getProjectName()</script></p>
-        </center>  
-        
+            <script>getProjectName()</script></p>   
+        <br>
+            <div class="col-md-12">
+             <p style="text-center;">
+                <p id="criteriaDetails">
+                
+                <b>Pipelining</b>: do teams use Jenkins pipelines to set up their project?
+                <br>
+                <b>Continuous Integration</b>: is CI design implemented? What tools are being used to ensure CI? Is there a VCS being used?
+<br>
+                <b>Continuous Delivery </b>: did teams expand upon the CI pipeline to include continuous delivery? Do build tools (Maven, Gradle) allow for fully testing features to be ready for delivery?
+<br>
+                <b>Continuous Deployment</b>: did teams deliver beyond a Continuous Delivery Pipeline by also automating the task of deploying added features that passed all testing and integration exercises.
+</p>
+            <br>
+            <form id="judgeForm" action="/scoreboard" method="get">
+                Rating: 
+                <select name="rating:">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                 <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br><br>
+                Feedback:
+                <textarea id="FunctionalityFeedback" rows="5" cols="30"></textarea>
+                <br><br>
+                <input type="submit" value="Save and Submit" onclick="redirect();">
+            </form>
         </div>
     </body>
 </html>
