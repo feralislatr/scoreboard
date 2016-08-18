@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>UX Form</title>
+        <link rel="stylesheet" href="projPage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    </head>
+    <body>
+        <ul class="topnav" id="myTopnav">
+          <li><a href="projPage.html">Home</a></li>
+          <li><a href="scoreboard.html">Login</a></li>
+          <li><a href="http://www.google.com">Config</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+        <div ng-app="myApp" ng-controller="myCtrl" id="app"></div>
+            <center>
+        <h1>Judge Form</h1>
+            
+            <p id="hackathonName">
+            <script>getHackathonName()</script>
+            </p>
+            
+            <p id="teamName">
+                <script>getTeamName()</script>
+            </p>
+            
+            <p id="projectName">
+            <script>getProjectName()</script></p>
+            </center>    
+        <br>
+            <p id="criteriaName">
+            UX</p>
+            
+            <p id="criteriaDetails">
+            ux details</p>
+            <br>
+            <form id="judgeForm" action="scoreboard.html" method="get">
+                Rating: 
+                <select name="rating:">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                 <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br><br>
+                Feedback:
+                <textarea id="uxFeedback" rows="5" cols="30"></textarea>
+                <br><br>
+                <input type="submit" value="Save and Submit" onclick="redirect();">
+            </form>
+    </body>
+</html>
