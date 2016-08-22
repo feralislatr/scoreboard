@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/agile', function(req, res) {
+router.get('/Agile', function(req, res) {
   res.render('Agile');
 });
 

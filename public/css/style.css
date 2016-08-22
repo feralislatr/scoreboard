@@ -7,68 +7,6 @@ body{
     background-color:#262626;
     height:100%;
 }
-
-
-#navwrap{
-	width: 100%;
-	height:60px;
-	top:0;
-	background-color: #262626;
-	box-shadow: 0px 2px 20px 0px #262626;
-	z-index: 10;
-} 
-
-nav{
-	font-family: 'Maven Pro', sans-serif;
-	font-weight: 700;
-	right:0;
-	display: inline-block;
-	opacity: 1.00;
-	whitespace: nowrap;
-	overflow: hidden;
-
-
-}
-
-nav ul,
-nav li{
-	margin: 0;
-	padding: 0;
-	white-space: nowrap;
-	overflow: hidden;
-
-}
-
-nav ul{
-	list-style: none;
-	width: 100%;
-}
-
-nav li{
-	float: left;
-	position:relative;
-	width: auto;
-	margin: auto;
-	display: inline-block;
-	padding: 15px;
-	padding-right: 0;
-	padding-left: 40px;
-	text-align: right;
-
-}
-
-#container{
-    position:relative;
-    top:50px;
-    width:90%;
-    height:100%;
-    margin: 0 auto;
-}
-
-header{
-	margin: 0 auto;
-}
-
 /**Scoreboard ****************/
 
 .round{
@@ -106,7 +44,7 @@ header{
 /**Scorebox**************/
 
 table,tr,td{
-	border:transparent;
+	border:#262626;
 	
 }
 
@@ -118,7 +56,7 @@ td{
 
 td a, td a:visited{
 	text-decoration: none;
-	color:white;
+	color:dimgray;
 	padding:30px;
 	font-size:150%;
 }
@@ -136,26 +74,26 @@ td a:hover{
 
 
 .ui{
-	background-color: turquoise;
+	background-color: lightgray;
 }
 
 .function{
-	background-color: aquamarine;	
+	background-color: ghostwhite;	
 }
 
 .agile{
-	background-color: coral;
+	background-color: lightgray;
 }
 
 .devops{
-	background-color:salmon;
+	background-color:ghostwhite;
 }
 
 .testing{
-	background-color:violet;
+	background-color:lightgray;
 }
 
 .value{
-	background-color:lavender;
+	background-color:ghostwhite;
 	
 }

@@ -1,0 +1,15 @@
+html, body {
+    width: 100%;
+}
+table {
+    margin: 0 auto;
+	text-align: center;
+	align-items:center;
+}
+
+.tableCell{
+	align-content: center;
+	border-width: thin;
+	border: thin solid #EFEFEF;
+	padding: 5px;	
+	}

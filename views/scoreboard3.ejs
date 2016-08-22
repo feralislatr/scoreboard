@@ -1,9 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Scoreboard</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <link rel="stylesheet" href="table.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,235 +23,83 @@
                   </li>
              </ul>
         </nav>
+        <div class="jumbotron"><center>
+            <div class="container">
+                <h1 class="display-3">DevOps Dashboard
+                </h1>
+            </div></center>
+        </div>
             
-            <div id="container">
-                <header class="col-md-12">
-                    <h2>DevOps Scoreboard</h2>
-                </header>
-                
-                <div id="round1" class="round col-md-12">
-                    <div class="roundhead">
-                        <h2>Round 1</h2>
-                    </div> 
-                
-                    <div class="left col-md-6">
-                        <h3>Team A</h3>
-                        
-                        <div id="scorebox-container">
-                            <table>
-                                <tr>
-                                    <td class="ui">
-                                        <a href="/ux">UX/UI</a>
-                                    </td>
-                                    <td class="function">
-                                        <a href="/functionality">Function</a>
-                                    </td>
-                                    <td class="agile">
-                                        <a href="/Agile">Agile</a>
-                                    </td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td class="devops">
-                                        <a href="devops.html">DevOps</a>
-                                    </td>
-                                    <td class="testing">
-                                        <a href="/continuousTesting">Testing</a>
-                                    </td>
-                                    <td class="value">
-                                        <a href="/businessValue">Value</a>
-                                    </td>
-                                </tr>
+        <div class="col-md-6">
+            <table class="table table-hover" style="border-collapse:collapse;"><center>
+
+                <thead>
+                    <tr><th>&nbsp;</th>
+                        <th>Round 1</th>
+                        <th>Round 2</th>
+                        <th>Round 3</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                              <th><button class="btn btn-default btn-xs">Team A</button></th>
+                        <td>16</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>23</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="12" class="hiddenRow"><div class="accordian-body collapse" id="demo1"> 
+                          <table class="table table-striped">
+                                  <tbody>
+                                    <tr><th>UI/UX</th><td><a href="/ux">#</a></td><td><a href="/ux">#</a></td><td><a href="/ux">#</a></td><td><a href="/ux">#</a></td></tr>
+
+                                    <tr><th>Functionality</th><td><a href="/functionality">#</a></td><td><a href="/functionality">#</a></td><td><a href="/functionality">#</a></td><td><a href="/functionality">#</a></td></tr>
+
+                                    <tr><th>Agile</th><td><a href="/Agile">#</a></td><td><a href="/Agile">#</a></td><td><a href="/Agile">#</a></td><td><a href="/Agile">#</a></td></tr>
+
+                                    <tr><th>DevOps</th><td><a href="/devops">#</a></td><td><a href="/devops">#</a></td><td><a href="/devops">#</a></td><td><a href="/devops">#</a></td></tr>
+
+                                    <tr><th>Testing</th><td><a href="/conttesting">#</a></td><td><a href="/conttesting">#</a></td><td><a href="/conttesting">#</a></td><td><a href="/conttesting">#</a></td></tr>
+
+                                    <tr><th>Business Value</th><td><a href="/businessval">#</a></td><td><a href="/businessval">#</a></td><td><a href="/businessval">#</a></td><td><a href="/businessval">#</a></td></tr>
+                                  </tbody>
                             </table>
-                        </div> <!-- scorebox container -->
-                        <h4>Total Score: 0</h4>
-                        
-                    </div> <!-- left -->
-                    
-                    <div class="right col-md-6">
-                        <h3>Team B</h3>
-                        
-                                                <div id="scorebox-container">
-                            <table>
-                                <tr>
-                                    <td class="ui">
-                                        <a href="/ux">UX/UI</a>
-                                    </td>
-                                  <td class="function">
-                                        <a href="/functionality">Function</a>
-                                    </td>
-                                    <td class="agile">
-                                        <a href="/Agile">Agile</a>
-                                    </td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td class="devops">
-                                        <a href="/devops">DevOps</a>
-                                    </td>
-                                    <td class="testing">
-                                        <a href="/continuousTesting">Testing</a>
-                                    </td>
-                                    <td class="value">
-                                        <a href="/businessValue">Value</a>
-                                    </td>
-                                </tr>
+
+                          </div> </td>
+                    </tr>
+                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                  <th><button class="btn btn-default btn-xs">Team B</button></th>
+                        <td>16</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>23</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="12" class="hiddenRow"><div class="accordian-body collapse" id="demo2"> 
+                          <table class="table table-striped">
+                                  <tbody>
+                                    <tr><th>UI/UX</th><td><a href="/ux">#</a></td><td><a href="/ux">#</a></td><td><a href="/ux">#</a></td><td><a href="/ux">#</a></td></tr>
+
+                                    <tr><th>Functionality</th><td><a href="/functionality">#</a></td><td><a href="/functionality">#</a></td><td><a href="/functionality">#</a></td><td><a href="/functionality">#</a></td></tr>
+
+                                    <tr><th>Agile</th><td><a href="/Agile">#</a></td><td><a href="/Agile">#</a></td><td><a href="/Agile">#</a></td><td><a href="/Agile">#</a></td></tr>
+
+                                    <tr><th>DevOps</th><td><a href="/devops">#</a></td><td><a href="/devops">#</a></td><td><a href="/devops">#</a></td><td><a href="/devops">#</a></td></tr>
+
+                                    <tr><th>Testing</th><td><a href="/conttesting">#</a></td><td><a href="/conttesting">#</a></td><td><a href="/conttesting">#</a></td><td><a href="/conttesting">#</a></td></tr>
+
+                                    <tr><th>Business Value</th><td><a href="/businessval">#</a></td><td><a href="/businessval">#</a></td><td><a href="/businessval">#</a></td><td><a href="/businessval">#</a></td></tr>
+                                  </tbody>
                             </table>
-                        </div> <!-- scorebox container -->
-                        <h4>Total Score: 0</h4>
-                        
-                    </div>
-                </div> <!-- round 1 -->
-                
-                <div id="round2" class="round col-md-12">
-                    <div class="roundhead">
-                        <h2>Round 2</h2>
-                    </div> 
-                
-                    <div class="left col-md-6">
-                        <h3>Team A</h3>
-                        
-                                                <div id="scorebox-container">
-                            <table>
-                                <tr>
-                                     <td class="ui">
-                                        <a href="/ux">UX/UI</a>
-                                    </td>
-                                  <td class="function">
-                                        <a href="/functionality">Function</a>
-                                    </td>
-                                    <td class="agile">
-                                        <a href="/Agile">Agile</a>
-                                    </td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td class="devops">
-                                        <a href="/devops">DevOps</a>
-                                    </td>
-                                    <td class="testing">
-                                        <a href="/continuousTesting">Testing</a>
-                                    </td>
-                                    <td class="value">
-                                        <a href="/businessValue">Value</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!-- scorebox container -->
-                        <h4>Total Score: 0</h4>
-                        
-                    </div> <!-- left -->
-                    
-                    <div class="right col-md-6">
-                        <h3>Team B</h3>
-                        
-                                                <div id="scorebox-container">
-                            <table>
-                                <tr>
-                                     <td class="ui">
-                                        <a href="/ux">UX/UI</a>
-                                    </td>
-                                  <td class="function">
-                                        <a href="/functionality">Function</a>
-                                    </td>
-                                    <td class="agile">
-                                        <a href="/Agile">Agile</a>
-                                    </td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td class="devops">
-                                        <a href="/devops">DevOps</a>
-                                    </td>
-                                    <td class="testing">
-                                        <a href="/continuousTesting">Testing</a>
-                                    </td>
-                                    <td class="value">
-                                        <a href="/businessValue">Value</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!-- scorebox container -->
-                        <h4>Total Score: 0</h4>
-                        
-                    </div> <!-- right -->
-                </div> <!-- round 2 -->
-                
-                <div id="round3" class="round col-md-12">
-                    <div class="roundhead">
-                        <h2>Round 3</h2>
-                    </div>
-                
-                    <div class="left col-md-6">
-                        <h3>Team A</h3>
-                        
-                                                <div id="scorebox-container">
-                            <table>
-                                <tr>
-                                     <td class="ui">
-                                        <a href="/ux">UX/UI</a>
-                                    </td>
-                                  <td class="function">
-                                        <a href="/functionality">Function</a>
-                                    </td>
-                                    <td class="agile">
-                                        <a href="/Agile">Agile</a>
-                                    </td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td class="devops">
-                                        <a href="/devops">DevOps</a>
-                                    </td>
-                                    <td class="testing">
-                                        <a href="/continuousTesting">Testing</a>
-                                    </td>
-                                    <td class="value">
-                                        <a href="/businessValue">Value</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!-- scorebox container -->
-                        <h4>Total Score: 0</h4>
-                        
-                    </div> <!-- left -->
-                    
-                    <div class="right col-md-6">
-                        <h3>Team B</h3>
-                        
-                                                <div id="scorebox-container">
-                            <table>
-                                <tr>
-                                   <td class="ui">
-                                        <a href="/ux">UX/UI</a>
-                                    </td>
-                                  <td class="function">
-                                        <a href="/functionality">Function</a>
-                                    </td>
-                                    <td class="agile">
-                                        <a href="/Agile">Agile</a>
-                                    </td>
-                                   
-                                </tr>
-                                <tr>
-                                    <td class="devops">
-                                        <a href="/devops">DevOps</a>
-                                    </td>
-                                    <td class="testing">
-                                        <a href="/continuousTesting">Testing</a>
-                                    </td>
-                                    <td class="value">
-                                        <a href="/businessValue">Value</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div> <!-- scorebox container -->
-                        <h4>Total Score: 0</h4>
-                        
-                    </div> <!-- right -->
-                </div> <!-- round 3 -->
-            </div>
-            
-        </body>
-    
+                          </div> </td>
+                    </tr>
+                </tbody></center>
+            </table>
+        </div>
+     </body>
 </html>
